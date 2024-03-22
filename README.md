@@ -49,7 +49,7 @@ uses an MGN12C linear rail for the X-axis. Also the BBox on the left uses an axl
 on the right uses dual leadscrews (two motors). This is a good example of how the BBox is more of a platform rather than a specific printer design.
 Use what you prefer, or what you can based on the parts you have available (hint: using a donor printer like a KP3S or Ender 3 is a great way to build a BBox).
 
-![image](https://gist.github.com/assets/875866/837a7ccc-8bfa-485a-b12e-da584fad65e1)
+![image](./Two-BBox180.png)
 
 > Speaking of donors.....using an existing printer such as a KP3S or an Ender 3 style printer is an excellent and cost effective way to build a BBox.
 With the KP3S you can build a BBox180, with an Ender 3 type printer you can build a BBox235, etc. While you can certainly build a BBox from scratch, using
