@@ -1,0 +1,51 @@
+site_name: Sakitume's BBox Project
+nav:
+    - The BBox: index.md
+    - Before you start: sidebar/build-overview.md
+    - What you'll need: sidebar/whats-needed.md
+    - The sizes of things: sidebar/sizing.md
+    - Printing the parts: sidebar/printing-parts.md
+    - Assembling the BBox:
+      - Frame: assembly/frame.md
+      - A/B Motors: assembly/motors.md
+      - Linear Rod X: assembly/linear-rod-x.md
+      - Linear Rail X: assembly/linear-rail-x.md
+      - Bed platform: assembly/bed-platform.md
+      - Dual Leadscrew Z: assembly/dual-leadscrew.md
+      - Dual Belted Z: assembly/dual-belted-Z.md
+      - Toolhead: assembly/toolhead.md
+    - Enclosure:
+      - Panels: enclosure/panels.md
+      - Electronics: enclosure/electronics.md
+      - Lighting: enclosure/lighting.md
+    - Klipper:
+      - The host computer: klipper/host.md
+      - Install with KIAUH: klipper/kiauh.md
+      - Configure: klipper/config.md
+      - Testing: klipper/testing.md
+
+
+# We need the 'material' theme for the 'offline' plugin to work
+theme:
+  name: material
+
+plugins:
+  - search
+  - offline  
+
+# See: https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#highlight
+#markdown_extensions:
+#  - pymdownx.highlight
+#  - pymdownx.superfences
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: false
+
+#extra_javascript:
+#  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js
+#  - javascripts/config.js
+#extra_css:
+#  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css
+

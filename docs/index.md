@@ -1,3 +1,18 @@
+# Overview
+This is a set of notes on building the BBox printer. **It is a work in progress** and constructive feedback is always appreciated. 
+
+[We have a BBox discord channel](https://discord.com/channels/1085579502735872044/1119417214915842258).
+You may need to use this [invite](https://discord.gg/upRPU4vNSZ) to the Delayed Development discord server to access that channel.
+
+Please check out the sidebar on the left (pull it down if you have to in case it is collapsed) and browse the various sections I've compiled thus far.
+
+> Note: The BBox is currently in a closed beta. This is to allow us to be able to have a more controlled back and forth regarding feedback
+and adjustments to help improve the BBox project so that it can be more broadly shared with an open beta, and then hopefully a general release.
+
+Thank you for your interest in my BBox project,  
+Sakitume (Sock it to me)  
+[My YouTube channel](https://www.youtube.com/channel/UC6pX9Il67lsxVa1CSkXlb0g)
+
 ## What is the BBox?
 
 The BBox started off as a personal project. The first few protoypes were "BBox180" printers meaning they had a 180x180x180 build volume.
@@ -56,11 +71,4 @@ With the KP3S you can build a BBox180, with an Ender 3 type printer you can buil
 a donor printer will save you some money as well as speed up the build process.
 
 In the picture above, the BBox180 on the left used a BMG clone extruder coupled with a bowden tube to the hotend. The BBox180 on the right used a Sherpa mini direct drive extruder. Both are options that provide very good performance. But for higher speeds (250mms) the BMG clone wasn't able to keep up, probably related to the much higher pressure advance that a bowden system requires versus direct drive. I later switched that printer over to also use a Sherpa mini direct drive extruder.
-
-## Building a BBox
-The BBox has not yet been released. It is about to enter a closed beta period to a limited number of users who can provide feedback, test the parts, etc so that when 
-the BBox is released it will be a little more polished, easier to build, troubleshoot and also use.
-
-In the meantime you are welcome to visit the documentation site for the BBox project
-
 
