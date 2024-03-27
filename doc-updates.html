@@ -9,8 +9,8 @@
       
       
       
+        <link rel="prev" href="sidebar/printing-parts.html">
       
-        <link rel="next" href="sidebar/build-overview.html">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -18,7 +18,7 @@
     
     
       
-        <title>Sakitume's BBox Project</title>
+        <title>Doc Updates - Sakitume's BBox Project</title>
       
     
     
@@ -64,11 +64,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#overview" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -101,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The BBox
+              Doc Updates
             
           </span>
         </div>
@@ -188,29 +183,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    The BBox
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -219,35 +194,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-the-bbox" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is the BBox?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -761,9 +707,16 @@
       
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="doc-updates.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="doc-updates.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -772,6 +725,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -793,25 +747,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-the-bbox" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is the BBox?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -826,89 +761,25 @@
                   
 
 
-<h1 id="overview">Overview</h1>
-<p>This is a set of notes on building the BBox printer. <strong>It is a work in progress</strong> and constructive feedback is always appreciated. </p>
-<p><a href="https://discord.com/channels/1085579502735872044/1119417214915842258">We have a BBox discord channel</a>.
-You may need to use this <a href="https://discord.gg/upRPU4vNSZ">invite</a> to the Delayed Development discord server to access that channel.</p>
-<p>Please check out the sidebar on the left (pull it down if you have to in case it is collapsed) and browse the various sections I've compiled thus far.</p>
-<blockquote>
-<p>Note: The BBox is currently in a closed beta. This is to allow us to be able to have a more controlled back and forth regarding feedback
-and adjustments to help improve the BBox project so that it can be more broadly shared with an open beta, and then hopefully a general release.</p>
-</blockquote>
-<p>Thank you for your interest in my BBox project,<br />
-Sakitume (Sock it to me)<br />
-<a href="https://www.youtube.com/channel/UC6pX9Il67lsxVa1CSkXlb0g">My YouTube channel</a></p>
-<h2 id="what-is-the-bbox">What is the BBox?</h2>
-<p>The BBox started off as a personal project. The first few protoypes were "BBox180" printers meaning they had a 180x180x180 build volume.
-The BBox180 is a small(ish), enclosed CoreXY printer with good performance characteristics. The main features are:</p>
+  <h1>Doc Updates</h1>
+
+<p>As I work on this documentation I will try to list the major changes/updates that occur</p>
 <ul>
-<li>CoreXY motion system</li>
-<li>Support for either dual leadscrews or dual belts for Z-drive</li>
-<li>Support for either linear rods or linear rail for X-axis</li>
-<li>Enclosed (but you don't have to if you don't want to)<ul>
-<li>This lets you easily print ABS and ASA type materials with great results</li>
+<li>3/26/2024<ul>
+<li>Added this <a href="doc-updates.html">Doc Updates</a> section</li>
+<li>The <a href="sidebar/whats-needed.html">What you'll need</a> section was updated<ul>
+<li>Replaced the clunky markdown table that was used for the BOM with an <a href="sidebar/whats-needed.html#bill-of-materials-bom">embedded Google Sheet as well as a clickable link to the sheet</a></li>
+<li>Added a "deburring tool" as a suggested tool</li>
 </ul>
 </li>
-<li>Printer filament is stored within the enclosure<ul>
-<li>Helps keep the filament stay dray during printing</li>
-</ul>
-</li>
-<li>Very simple but efficient toolhead<ul>
-<li>Uses Sherpa Mini extruder<ul>
-<li>A well proven design with mods/variants to make it easier to adapt an MMU such as the Basic4 or ERCF</li>
-</ul>
-</li>
-<li>Optionally, you could use a remote BMG type extruder with a bowden tube to the hotend<ul>
-<li>I ran a BBox180 like this for quite a while with very good results</li>
-</ul>
-</li>
-<li>Utilizes clone Bambu Labs X1C hotend for an excellent performance to cost ratio<ul>
-<li>Uses CHC style nozzle </li>
-</ul>
-</li>
-<li>Uses single 5015 fan with "Claw" duct for excellent part cooling performance</li>
-</ul>
-</li>
-<li>Excellent visibility to what you're printing<ul>
-<li>LED lighting with white interior panels make everything easy to see</li>
-<li>No belts or extrusion at front of the printer to get in the way</li>
-<li>Claw duct does not obscure the area around the nozzle so you see exactly how things are laying down</li>
-</ul>
-</li>
-<li>Scalable design, can be built as large or small as you wish within reason</li>
-<li>Unique motor and belt path that is directly inspired from the one in Tim Wieder's CoreCubeXY project. While similar to Voron V0 belt path
-it is not quite the same as the belt teeth face the back of the printer (mount against the X carriage).<ul>
-<li>No belts in front of the printer</li>
-<li>Uses a total of 10 pulleys. This is at least 2 less than most other printers.</li>
+<li>The <a href="sizing.md">The sizes of things</a> section was updated<ul>
+<li>A description for the MGN12C rail was added</li>
+<li>A description for the T-platform was added</li>
 </ul>
 </li>
 </ul>
-<blockquote>
-<p>Here's the original BBox180 prototype that I shared on YouTube mid 2023.<br />
-<a href="https://www.youtube.com/watch?v=T7EcTlZo50s"><img alt="Video" src="https://img.youtube.com/vi/T7EcTlZo50s/maxresdefault.jpg" /></a></p>
-</blockquote>
-<p>That prototype utilized a variety of pre-existing parts and designs that allowed me to test my ideas out. I am super appreciative
-of the very talented people who shared their work. Perhaps by sharing my BBox design I can also give back a little to the community.</p>
-<p>Since that initial prototype I have designed my own custom parts using Fusion360 for the BBox. Doing this allowed me to level up my
-(limited) CAD skills. I was also able to develop alternate X-axis and Z-axis motion systems. And more importantly, building my own parts
-allowed me to re-implement the belt pathing found in <a href="https://github.com/timwieder1509/CoreCubeXY">Tim Wieder's CoreCubeXY project</a> and adapt it into the BBox.
-But mostly, by building my own custom designed parts, I was able to develop the BBox to be as simple and basic <em>as I wanted</em>.</p>
-<blockquote>
-<p>Here's a video short I made of the linear rail variant of the BBox
-<a href="https://youtube.com/shorts/PAt_j0nHDr4?si=Oxzq9YSH98BA7vbG"><img alt="Video" src="https://img.youtube.com/vi/PAt_j0nHDr4/maxresdefault.jpg" /></a></p>
-</blockquote>
-<p>Below are some pics from Oct 2023 of two of my BBox 180 printers. The one on the left was the original prototype but rebuilt using all newly
-designed parts for the X/Y motion system. Like the original prototype, this rebuild uses linear rods for the X-axis. However the BBox on the right 
-uses an MGN12C linear rail for the X-axis. Also the BBox on the left uses an axle driven dual-belted Z (single motor) for the Z-axis while the BBox
-on the right uses dual leadscrews (two motors). This is a good example of how the BBox is more of a platform rather than a specific printer design.
-Use what you prefer, or what you can based on the parts you have available (hint: using a donor printer like a KP3S or Ender 3 is a great way to build a BBox).</p>
-<p><img alt="image" src="https://gist.github.com/assets/875866/837a7ccc-8bfa-485a-b12e-da584fad65e1" /></p>
-<blockquote>
-<p>Speaking of donors.....using an existing printer such as a KP3S or an Ender 3 style printer is an excellent and cost effective way to build a BBox.
-With the KP3S you can build a BBox180, with an Ender 3 type printer you can build a BBox235, etc. While you can certainly build a BBox from scratch, using
-a donor printer will save you some money as well as speed up the build process.</p>
-</blockquote>
-<p>In the picture above, the BBox180 on the left used a BMG clone extruder coupled with a bowden tube to the hotend. The BBox180 on the right used a Sherpa mini direct drive extruder. Both are options that provide very good performance. But for higher speeds (250mms) the BMG clone wasn't able to keep up, probably related to the much higher pressure advance that a bowden system requires versus direct drive. I later switched that printer over to also use a Sherpa mini direct drive extruder.</p>
+</li>
+</ul>
 
 
 

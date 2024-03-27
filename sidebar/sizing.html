@@ -339,11 +339,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sizing-the-rods-for-the-x-axis" class="md-nav__link">
+  <a href="#sizing-the-linear-rail-or-linear-rods-for-the-x-axis" class="md-nav__link">
     <span class="md-ellipsis">
-      Sizing the rods for the X-axis
+      Sizing the linear rail or linear rods for the X-axis
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Sizing the linear rail or linear rods for the X-axis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sizing-the-mgn12c-linear-rail-for-the-x-axis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sizing the MGN12C linear rail for the X-axis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sizing-the-linear-rods-for-the-x-axis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sizing the linear rods for the X-axis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -369,6 +393,15 @@
   <a href="#sizing-the-linear-rods-used-for-the-z-axis" class="md-nav__link">
     <span class="md-ellipsis">
       Sizing the linear rods used for the Z-axis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sizing-the-extrusion-used-for-the-t-platform-of-the-z-axis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sizing the extrusion used for the T-platform of the Z-axis
     </span>
   </a>
   
@@ -830,6 +863,25 @@
   
 
     
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc-updates.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Doc Updates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -903,11 +955,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sizing-the-rods-for-the-x-axis" class="md-nav__link">
+  <a href="#sizing-the-linear-rail-or-linear-rods-for-the-x-axis" class="md-nav__link">
     <span class="md-ellipsis">
-      Sizing the rods for the X-axis
+      Sizing the linear rail or linear rods for the X-axis
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Sizing the linear rail or linear rods for the X-axis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sizing-the-mgn12c-linear-rail-for-the-x-axis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sizing the MGN12C linear rail for the X-axis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sizing-the-linear-rods-for-the-x-axis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sizing the linear rods for the X-axis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -933,6 +1009,15 @@
   <a href="#sizing-the-linear-rods-used-for-the-z-axis" class="md-nav__link">
     <span class="md-ellipsis">
       Sizing the linear rods used for the Z-axis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sizing-the-extrusion-used-for-the-t-platform-of-the-z-axis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sizing the extrusion used for the T-platform of the Z-axis
     </span>
   </a>
   
@@ -983,9 +1068,21 @@ For example, the MGN12C rail found on a KP3S is 225mm long. So your horizontal e
 <p>If you choose to use linear rods for the X-axis then <strong>the length of your horizontal extrusions must be either 115mm or 120mm longer than your bed width.</strong> For my BBox180 using
 linear rods I chose (again) to use extrusions that were 295mm in length (180 + 115). But as described earlier I could have used 300mm instead.</p>
 <p>For the BBox235 that I built, I used 350mm length extrusions (235 + 115).</p>
-<h2 id="sizing-the-rods-for-the-x-axis">Sizing the rods for the X-axis</h2>
-<p>The two rods used for the X-axis will need to be cut to a specific length based on the length of horizontal extrusion you decided upon. And if that wasn't enough, one of these
-two rods needs to be just a few mm shorter than the other. <strong>The top rod needs to be 8mm shorter than your horizontal extrusion and the bottom rod needs to be 5mm shorter than the horizontal extrusion.</strong></p>
+<h2 id="sizing-the-linear-rail-or-linear-rods-for-the-x-axis">Sizing the linear rail or linear rods for the X-axis</h2>
+<p>As previously mentioned the BBox can use either two linear rods or a single MGN12C linear rail for the X-axis motion. If using a KP3S donor
+then the MGN12C variant is an ideal choice.</p>
+<h3 id="sizing-the-mgn12c-linear-rail-for-the-x-axis">Sizing the MGN12C linear rail for the X-axis</h3>
+<p>This applies only if using the linear rail for X-axis variant.  </p>
+<p>This variant has only been tested with a 225mm MGN12C that was pulled from a KP3S donor printer. The 180x180 bed from the KP3S was also used.
+By using these two parts together the full 180mm length of the bed were usable. </p>
+<p>So generally speaking the MGN12C should be 45mm longer than the length of the printer bed (along X axis).</p>
+<blockquote>
+<p>Note: The KP3S Pro uses 250mm rails and advertises a build volume of 200x200x200, however the bed is actually 210x210 in dimension. So if you are using a KP3S Pro as a donor it is possible your usable build space may end up being 205x205 along X/Y (or even more). This has yet to be confirmed.</p>
+</blockquote>
+<h3 id="sizing-the-linear-rods-for-the-x-axis">Sizing the linear rods for the X-axis</h3>
+<p>This applies only if using the linear rods for X-axis variant.  </p>
+<p>The two rods used for the X-axis will need to be cut to a specific length based on the length of horizontal extrusion you decided upon.
+And if that wasn't enough, one of these two rods needs to be just a few mm shorter than the other. <strong>The top rod needs to be 8mm shorter than your horizontal extrusion and the bottom rod needs to be 5mm shorter than the horizontal extrusion.</strong></p>
 <blockquote>
 <p>You could just cut them to the same length (the shorter of the two). That should be okay as well.</p>
 </blockquote>
@@ -1004,6 +1101,17 @@ you'll have more space for the reverse bowden tube and wire harness (leading to 
 <h2 id="sizing-the-linear-rods-used-for-the-z-axis">Sizing the linear rods used for the Z-axis</h2>
 <p><strong>These 3 rods should be same length as your horizontal extrusions</strong>. So if you're using 300mm horizontal extrusions for a BBox180 then these 3 rods will also be
 300mm in length. If using 350mm horizontal extrusion for a BBox235 then you'll want linear rods that are 350mm in length.</p>
+<h2 id="sizing-the-extrusion-used-for-the-t-platform-of-the-z-axis">Sizing the extrusion used for the T-platform of the Z-axis</h2>
+<blockquote>
+<p>Note: The Z-axis and this T-platform are the parts of the build that are the most nebulous or ambiguous. For the T-platform you
+could just buy two extra pieces of extrusion that are the same length as your horizontal extrusions...and then be prepared to cut 30mm off of one of these. More about this later.</p>
+</blockquote>
+<p>Two lengths of 2020 extrusion are joined together to form a "T" shape. When looking at the front of the printer I normally have the T on its side so it looks something like this: <code>|---</code></p>
+<p><img alt="image" src="https://gist.github.com/assets/875866/17c18ea0-c434-43dc-bf75-131564d48728" /></p>
+<p>In the picture above you can see the top part of the T already connected to two vertical linear rods. There is also another piece of 2020 extrusion that will be connected to this top part of the T.</p>
+<p>Generally speaking the top part of the T will be about 50mm longer than length of your bed. However it can be as long as your horizontal extrusions. I just use whatever scrap I happen to have on hand that is close enough.</p>
+<p>The other part of the T has a more specific dimension: it should be 30mm shorter than your horizontal extrusions. Only one end of this extrusion
+needs to be square (the end that connects to the top part of the <code>T</code>), so if are buying pre-cut extrusions that are "standard" or common lengths, you can just buy two additional pieces that are the same length as your horizontal extrusions and just cut one of them to be 30mm shorter using whatever method you have available (a hacksaw is fine) as the cut end doesn't need to be square and clean.</p>
 
 
 
