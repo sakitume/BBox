@@ -30,9 +30,26 @@ linear rods I chose (again) to use extrusions that were 295mm in length (180 + 1
 
 For the BBox235 that I built, I used 350mm length extrusions (235 + 115).
 
-## Sizing the rods for the X-axis
-The two rods used for the X-axis will need to be cut to a specific length based on the length of horizontal extrusion you decided upon. And if that wasn't enough, one of these
-two rods needs to be just a few mm shorter than the other. **The top rod needs to be 8mm shorter than your horizontal extrusion and the bottom rod needs to be 5mm shorter than the horizontal extrusion.**
+
+## Sizing the linear rail or linear rods for the X-axis
+As previously mentioned the BBox can use either two linear rods or a single MGN12C linear rail for the X-axis motion. If using a KP3S donor
+then the MGN12C variant is an ideal choice.
+
+### Sizing the MGN12C linear rail for the X-axis
+This applies only if using the linear rail for X-axis variant.  
+
+This variant has only been tested with a 225mm MGN12C that was pulled from a KP3S donor printer. The 180x180 bed from the KP3S was also used.
+By using these two parts together the full 180mm length of the bed were usable. 
+
+So generally speaking the MGN12C should be 45mm longer than the length of the printer bed (along X axis).
+
+> Note: The KP3S Pro uses 250mm rails and advertises a build volume of 200x200x200, however the bed is actually 210x210 in dimension. So if you are using a KP3S Pro as a donor it is possible your usable build space may end up being 205x205 along X/Y (or even more). This has yet to be confirmed.
+
+### Sizing the linear rods for the X-axis
+This applies only if using the linear rods for X-axis variant.  
+
+The two rods used for the X-axis will need to be cut to a specific length based on the length of horizontal extrusion you decided upon.
+And if that wasn't enough, one of these two rods needs to be just a few mm shorter than the other. **The top rod needs to be 8mm shorter than your horizontal extrusion and the bottom rod needs to be 5mm shorter than the horizontal extrusion.**
 
 > You could just cut them to the same length (the shorter of the two). That should be okay as well.
 
@@ -55,3 +72,19 @@ With my BBox180 printers using 295mmm horizontal extrusions I used 400mm length 
 ## Sizing the linear rods used for the Z-axis
 **These 3 rods should be same length as your horizontal extrusions**. So if you're using 300mm horizontal extrusions for a BBox180 then these 3 rods will also be
 300mm in length. If using 350mm horizontal extrusion for a BBox235 then you'll want linear rods that are 350mm in length.
+
+## Sizing the extrusion used for the T-platform of the Z-axis
+> Note: The Z-axis and this T-platform are the parts of the build that are the most nebulous or ambiguous. For the T-platform you
+could just buy two extra pieces of extrusion that are the same length as your horizontal extrusions...and then be prepared to cut 30mm off of one of these. More about this later.
+
+Two lengths of 2020 extrusion are joined together to form a "T" shape. When looking at the front of the printer I normally have the T on its side so it looks something like this: `|---`
+
+![image](https://gist.github.com/assets/875866/17c18ea0-c434-43dc-bf75-131564d48728)
+
+In the picture above you can see the top part of the T already connected to two vertical linear rods. There is also another piece of 2020 extrusion that will be connected to this top part of the T.
+
+Generally speaking the top part of the T will be about 50mm longer than length of your bed. However it can be as long as your horizontal extrusions. I just use whatever scrap I happen to have on hand that is close enough.
+
+The other part of the T has a more specific dimension: it should be 30mm shorter than your horizontal extrusions. Only one end of this extrusion
+needs to be square (the end that connects to the top part of the `T`), so if are buying pre-cut extrusions that are "standard" or common lengths, you can just buy two additional pieces that are the same length as your horizontal extrusions and just cut one of them to be 30mm shorter using whatever method you have available (a hacksaw is fine) as the cut end doesn't need to be square and clean.
+

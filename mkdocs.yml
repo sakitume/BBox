@@ -23,6 +23,7 @@ nav:
       - Install with KIAUH: klipper/kiauh.md
       - Configure: klipper/config.md
       - Testing: klipper/testing.md
+    - Doc Updates: doc-updates.md
 
 
 # We need the 'material' theme for the 'offline' plugin to work
