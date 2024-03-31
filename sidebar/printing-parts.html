@@ -12,7 +12,7 @@
         <link rel="prev" href="sizing.html">
       
       
-        <link rel="next" href="../doc-updates.html">
+        <link rel="next" href="../assembly/frame.html">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -407,6 +407,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#folder-xymotionendstopy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Folder: XYMotion/EndStopY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#folder-zdrive_beltedaxledrive" class="md-nav__link">
     <span class="md-ellipsis">
       Folder: ZDrive_Belted/AxleDrive
@@ -506,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../assembly/frame.md" class="md-nav__link">
+      <a href="../assembly/frame.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -526,7 +535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../assembly/motors.md" class="md-nav__link">
+      <a href="../assembly/motors.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1034,6 +1043,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#folder-xymotionendstopy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Folder: XYMotion/EndStopY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#folder-zdrive_beltedaxledrive" class="md-nav__link">
     <span class="md-ellipsis">
       Folder: ZDrive_Belted/AxleDrive
@@ -1188,19 +1206,44 @@ These parts form the section of the gantry that join the X-axis to slide along t
 <li>XYJoinerXRodTopLeft.stl</li>
 <li>XYJoinerXRodTopRight.stl</li>
 </ul>
+<p>If using sensorless homing for X-axis you can skip printing <code>EndStopBumperLeft.stl</code> and <code>EndStopBumperRight.stl</code>.
+Otherwise you can choose to print just one of these parts depending on whether you want to home to the left side or the right side of your printer.</p>
 <p><img alt="image" src="https://gist.github.com/assets/875866/1011a4be-f449-4504-b029-04cd38008925" /></p>
 <h3 id="folder-xymotionxrodcarriage">Folder: XYMotion/XRod/Carriage</h3>
 <p>These parts should only be printed if you're using the <strong>linear rods</strong> for x-axis variant.
 These pieces form the X-carriage that the toolhead will attach to.</p>
 <p><img alt="image" src="https://gist.github.com/assets/875866/0805e08c-9c9c-4773-bb2d-bcfcb1f6d19d" /></p>
 <h3 id="folders-xymotionxrailjoiners-and-xymotionxrailcarriage_basic">Folders: XYMotion/XRail/Joiners and XYMotion/XRail/Carriage_Basic</h3>
-<p>These parts should only be printed if you're using the <strong>MGN12C linear rail</strong> for x-axis variant.
-The parts in <code>XYMotion/XRail/Joiners</code> form the section of the gantry that join the X-axis to slide along the Y-axis.
-The parts in <code>XYMotion/XRail/Carriage_Basic</code> form the X-carriage that the toolhead will attach to.</p>
+<p>These parts should only be printed if you're using the <strong>MGN12C linear rail</strong> for x-axis variant.</p>
+<p><strong>The parts in <code>XYMotion/XRail/Joiners</code> form the section of the gantry that join the X-axis to slide along the Y-axis.</strong><br />
+There are two sizes available; a +70mm variant and a +75mm variant. Choose the size that matches your desired
+horizontal extrusion length. For example if you're building a BBox180 using a 225mm rail and you want to use 300mm extrusion
+then use the +75mm parts listed below instead of the +70mm versions.</p>
+<ul>
+<li>XYJoinerLeft_75.stl</li>
+<li>XYJoinerRight_75.stl</li>
+</ul>
+<p>As another example, say you want to build a BBox using a 250mm rail and want to use pre-cut 320mm extrusion, then you would use
+the following parts instead:</p>
+<ul>
+<li>XYJoinerLeft_70.stl</li>
+<li>XYJoinerRight_70.stl</li>
+</ul>
+<p><strong>The parts in <code>XYMotion/XRail/Carriage_Basic</code> form the X-carriage that the toolhead will attach to.</strong> </p>
 <blockquote>
 <p>Note: There is also an <code>XYMoton/XRail/Carriage_DragonBurner</code> folder with carriage parts that may work with Voron DragonBurner toolhead. These are still a work in progress and have only been briefly tested.</p>
 </blockquote>
 <p><img alt="image" src="https://gist.github.com/assets/875866/43229087-c940-4b70-9738-f5fa3cf6fa43" /></p>
+<h3 id="folder-xymotionendstopy">Folder: XYMotion/EndStopY</h3>
+<p>This folder contains three different versions of an endstop mount for the Y axis. This is not needed if you will be using sensorless homing.</p>
+<ul>
+<li>EndStopY_Flat.stl</li>
+<li>EndStopY_Left.stl</li>
+<li>EndSotpY_Right.stl</li>
+</ul>
+<p>No picture of a buildplate is provided as print orientation should be apparent and also you will only need to print one of these parts.</p>
+<p>Choose <code>EndStopY_Flat.stl</code> if you're using linear rods for X-axis. You can use this part to mount an endstop switch on either the left or right side of the printer.</p>
+<p>If using linear rail for X-axis then choose either <code>EndStopY_Left.stl</code> or <code>EndStopY_Right.stl</code> to mount the endstop depending on which side you prefer to mount your switch.</p>
 <h3 id="folder-zdrive_beltedaxledrive">Folder: ZDrive_Belted/AxleDrive</h3>
 <p>These parts should only be printed if you're using the dual-belted Z-drive variant.</p>
 <ul>
