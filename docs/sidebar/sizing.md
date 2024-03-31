@@ -22,7 +22,7 @@ But instead I'm going to give you the reason why that's not entirely true so tha
 When using an MGN12C rail for the X-axis **the length of your horizontal extrusions must be either 70mm or 75mm longer than your rail.**
 For example, the MGN12C rail found on a KP3S is 225mm long. So your horizontal extrusion will be either 295mm or 300mm in length. It's pretty easy to find pre-cut lengths of 2020 extrusion that is 300mm in length. I cut my own extrusions to length (more about this later) so I used 295mm for my BBox180 printers. This allowed me to use 16"x20" plexiglass panels for the front door without having to cut the panel and also have the panel overlap the extrusions by about 4.5mm on each side. If I had used pre-cut 300mm extrusions these 16"x20" panels would still have a little bit of overlap, around 2mm on each side.
 
-> Note: At this time the current X/Y joiner parts are designed so that you'd use the "70mm longer than rail" length. I will either make another variant of these parts for the "75mm longer" or adjust these parts so they can be used for either case.
+> Note: There are two sets of X/Y joiner parts to choose from depending on whether you're going to use +70mm or +75mm length extrusions. Detailed info about this can be found in the section titled [Folders: XYMotion/XRail/Joiners and XYMotion/XRail/Carriage_Basic](printing-parts.md#folders-xymotionxrailjoiners-and-xymotionxrailcarriage_basic)
 
 #### If using linear rods for the X-axis
 If you choose to use linear rods for the X-axis then **the length of your horizontal extrusions must be either 115mm or 120mm longer than your bed width.** For my BBox180 using

@@ -99,6 +99,9 @@ These parts form the section of the gantry that join the X-axis to slide along t
 * XYJoinerXRodTopLeft.stl
 * XYJoinerXRodTopRight.stl
 
+If using sensorless homing for X-axis you can skip printing `EndStopBumperLeft.stl` and `EndStopBumperRight.stl`.
+Otherwise you can choose to print just one of these parts depending on whether you want to home to the left side or the right side of your printer.
+
 ![image](https://gist.github.com/assets/875866/1011a4be-f449-4504-b029-04cd38008925)
 
 ### Folder: XYMotion/XRod/Carriage
@@ -109,12 +112,41 @@ These pieces form the X-carriage that the toolhead will attach to.
 
 ### Folders: XYMotion/XRail/Joiners and XYMotion/XRail/Carriage_Basic  
 These parts should only be printed if you're using the **MGN12C linear rail** for x-axis variant.
-The parts in `XYMotion/XRail/Joiners` form the section of the gantry that join the X-axis to slide along the Y-axis.
-The parts in `XYMotion/XRail/Carriage_Basic` form the X-carriage that the toolhead will attach to.
+
+**The parts in `XYMotion/XRail/Joiners` form the section of the gantry that join the X-axis to slide along the Y-axis.**  
+There are two sizes available; a +70mm variant and a +75mm variant. Choose the size that matches your desired
+horizontal extrusion length. For example if you're building a BBox180 using a 225mm rail and you want to use 300mm extrusion
+then use the +75mm parts listed below instead of the +70mm versions.
+
+* XYJoinerLeft_75.stl
+* XYJoinerRight_75.stl
+
+As another example, say you want to build a BBox using a 250mm rail and want to use pre-cut 320mm extrusion, then you would use
+the following parts instead:
+
+* XYJoinerLeft_70.stl
+* XYJoinerRight_70.stl
+
+**The parts in `XYMotion/XRail/Carriage_Basic` form the X-carriage that the toolhead will attach to.** 
 
 > Note: There is also an `XYMoton/XRail/Carriage_DragonBurner` folder with carriage parts that may work with Voron DragonBurner toolhead. These are still a work in progress and have only been briefly tested.
 
 ![image](https://gist.github.com/assets/875866/43229087-c940-4b70-9738-f5fa3cf6fa43)
+
+### Folder: XYMotion/EndStopY
+This folder contains three different versions of an endstop mount for the Y axis. This is not needed if you will be using sensorless homing.
+
+* EndStopY_Flat.stl
+* EndStopY_Left.stl
+* EndSotpY_Right.stl
+
+No picture of a buildplate is provided as print orientation should be apparent and also you will only need to print one of these parts.
+
+Choose `EndStopY_Flat.stl` if you're using linear rods for X-axis. You can use this part to mount an endstop switch on either the left or right side of the printer.
+
+If using linear rail for X-axis then choose either `EndStopY_Left.stl` or `EndStopY_Right.stl` to mount the endstop depending on which side you prefer to mount your switch.
+
+
 
 ### Folder: ZDrive_Belted/AxleDrive
 These parts should only be printed if you're using the dual-belted Z-drive variant.
@@ -172,3 +204,5 @@ generated in/around the "block" area of the adapter.
 ![image](https://gist.github.com/assets/875866/75dca200-ce05-4356-ac37-1a4d8bb8c57e)
 ![image](https://gist.github.com/assets/875866/3ef7e9e8-9f9b-4a08-b012-1cdd0bb7e729)
 ![image](https://gist.github.com/assets/875866/ae05bc54-bcc9-4d5a-8c5d-4acffd7bfff3)
+
+
